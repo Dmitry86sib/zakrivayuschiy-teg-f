@@ -30,11 +30,11 @@
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-variation-settings: 'wgth' var(--wgth);
+    font-variation-settings: 'wgth'var(--wgth);
   }
 
   .card-title {
-    font-variation-settings: 'wgth' var(--wgth-title);
+    font-variation-settings: 'wgth'var(--wgth-title);
   }
 }
 
@@ -115,16 +115,16 @@
   bottom: -5px;
   height: 3px;
   background: currentColor;
-  transform: scaleX(0); 
-  transition: width 0.3s ease; 
- }
+  transform: scaleX(0);
+  transition: width 0.3s ease;
+}
 
- .theme-menu__button:focus-visible::after {
-  transform: scaleX(1); 
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
   width: 100%;
- }
+}
 
- .theme-menu__button:focus {
+.theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
 }
@@ -174,7 +174,7 @@
 .picture {
   object-fit: cover;
   object-position: center;
-  inline-size: 100%; 
+  inline-size: 100%;
   block-size: 100%;
   aspect-ratio: 1/1;
   border-block-end: 2px solid var(--accent-color);
@@ -194,21 +194,21 @@
   line-height: 14px;
   opacity: 0.5;
   text-shadow:
-    -1px 0 var(--bg-color), 
-    0 1px var(--bg-color), 
-    1px 0 var(--bg-color), 
-    0 -1px var(--bg-color); 
-    font-weight: 400;
+    -1px 0 var(--bg-color),
+    0 1px var(--bg-color),
+    1px 0 var(--bg-color),
+    0 -1px var(--bg-color);
+  font-weight: 400;
 }
 
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .label {
-      /* -webkit-text-stroke: 1px var(--bg-color); */
-      -webkit-text-stroke: 1px var(--bg-color);
-      text-stroke: 1px var(--bg-color);
-      text-shadow: none;
+    /* -webkit-text-stroke: 1px var(--bg-color); */
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+    text-shadow: none;
   }
-} 
+}
 
 .text_box-button {
   display: flex;
@@ -280,7 +280,7 @@
 
 .button__content:focus-visible,
 .footer__button:focus-visible {
-  box-shadow:  2px 2px 0 var(--accent-color);
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .button__content::after {
@@ -304,7 +304,7 @@
   position: relative;
   z-index: 1;
   color: var(--button-like-text-color);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 
 .footer {
@@ -427,7 +427,7 @@ dialog:modal {
   filter: brightness(200%) saturate(60%) hue-rotate(-90deg);
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   .header {
     padding-block-start: 120px;
   }
