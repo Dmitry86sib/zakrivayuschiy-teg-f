@@ -115,7 +115,17 @@
   transition: opacity 0.3s ease;
 }
 
-
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20%;
+  bottom: -5px;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0); 
+  transition: width 0.3s ease; 
+ }
 
  .theme-menu__button:focus-visible::after {
   transform: scaleX(1); 
