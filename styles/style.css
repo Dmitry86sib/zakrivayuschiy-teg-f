@@ -311,7 +311,12 @@
   transform: scaleX(1);
 }
 
-
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--button-like-text-color);
+  mix-blend-mode: difference; 
+}
 
 .footer {
   margin-block-end: 100px;
