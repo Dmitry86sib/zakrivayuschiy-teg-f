@@ -26,6 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-variation-settings: 'wgth' var(--wgth, 400);
 }
 
 @supports (font-variation-settings: normal) {
@@ -169,6 +170,7 @@
   padding-block: 3px;
   padding-inline: 10px;
   border-block-end: 2px solid var(--accent-color);
+  font-variation-settings: 'wgth' var(--wgth-title, 700);
 }
 
 .picture {
@@ -305,6 +307,7 @@
   z-index: 1;
   color: var(--button-like-text-color);
   mix-blend-mode: difference;
+  text-transform: uppercase;
 }
 
 .footer {
