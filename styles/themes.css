@@ -30,7 +30,7 @@
   --button-like-text-color: #ffffff;
 }
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000000;
     --accent-color: #00CC14;
