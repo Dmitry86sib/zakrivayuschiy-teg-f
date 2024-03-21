@@ -1,8 +1,8 @@
 :root {
   --main-font: 'Inter';
   --accent-font: 'PressStart2P';
-  --wgth: 400;
-  --wgth-title: 700;
+  --wght: 400;
+  --wght-title: 700;
   --bg-color: #FFFFFF;
   --accent-color: #000000;
   --bg-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),

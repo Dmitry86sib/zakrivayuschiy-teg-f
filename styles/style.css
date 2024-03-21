@@ -26,16 +26,16 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wgth' var(--wgth, 400);
+  font-variation-settings: 'wght' var(--wght, 400);
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-variation-settings: 'wgth' var(--wgth, 400);
+    font-variation-settings: 'wght' var(--wght, 400);
   }
 
   .card-title {
-    font-variation-settings: 'wgth' var(--wgth-title, 700);
+    font-variation-settings: 'wght' var(--wght-title, 700);
   }
 }
 
@@ -170,7 +170,7 @@
   padding-block: 3px;
   font-size: 18px;
   line-height: 22px;
-  font-variation-settings: 'wgth' var(--wgth-title, 700);
+  font-variation-settings: 'wght' var(--wght-title, 700);
 }
 
 .picture {

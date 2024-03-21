@@ -8,8 +8,8 @@
 :root.theme-dark {
   --bg-color: #000000;
   --accent-color: #00CC14;
-  --wgth: 465;
-  --wgth-title: 785;
+  --wght: 465;
+  --wght-title: 785;
   --bg-color: #000000;
   --bg-image: repeating-linear-gradient(to right, #000 0, #000 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px),
@@ -21,8 +21,8 @@
 :root.theme-light {
   --bg-color: #FFFFFF;
   --accent-color: #000000;
-  --wgth: 400;
-  --wgth-title: 700;
+  --wght: 400;
+  --wght-title: 700;
   --bg-color: #FFFFFF;
   --bg-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -34,8 +34,8 @@
   :root {
     --bg-color: #000000;
     --accent-color: #00CC14;
-    --wgth: 465;
-    --wgth-title: 785;
+    --wght: 465;
+    --wght-title: 785;
     --bg-image: repeating-linear-gradient(to right, #000 0, #000 2px, transparent 2px, transparent 4px),
       repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px),
       linear-gradient(to bottom, #007f0c, #004306);
