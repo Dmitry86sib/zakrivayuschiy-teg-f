@@ -26,16 +26,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-variation-settings: 'wgth'var(--wgth);
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-variation-settings: 'wgth'var(--wgth);
+    font-variation-settings: 'wgth' var(--wgth);
   }
 
   .card-title {
-    font-variation-settings: 'wgth'var(--wgth-title);
+    font-variation-settings: 'wgth' var(--wgth-title);
   }
 }
 
@@ -170,7 +169,6 @@
   padding-block: 3px;
   padding-inline: 10px;
   border-block-end: 2px solid var(--accent-color);
-  font-variation-settings: 'wgth'var(--wgth-title);
 }
 
 .picture {
