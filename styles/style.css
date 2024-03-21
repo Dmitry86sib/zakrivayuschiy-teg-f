@@ -100,7 +100,6 @@
 
 /* стили самой кнопки */
 .theme-menu__button {
-
   position: relative;
   display: flex;
   gap: 4px;
@@ -122,11 +121,10 @@
   left: 0;
   width: 20%;
   bottom: -5px;
-  height: 3px; /* Высота подчеркивания */
-  background: currentColor; /* Использование цвета текста кнопки */
-  transform: scaleX(0); /* Изначальное состояние: масштабирование в 0 */
-  transition: width 0.3s ease; /* Плавность масштабирования */
-  /* transition: transform 0.3s ease, width 0.3s ease; */
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0); 
+  transition: width 0.3s ease; 
  }
 
  .theme-menu__button:focus-visible::after {
@@ -148,19 +146,10 @@
   transition: opacity 0.3s ease;
 } 
 
-
-/* стили выбранной кнопки */
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
 }
-
-/* .theme-menu__button::before {
-  content: '\00a0';
-} */
-
-
-
 
 .theme-menu__button:disabled::before {
   position: absolute;
@@ -168,8 +157,6 @@
   color: inherit;
   left: -19px;
 }
-
-
 
 .theme-menu__button::before {
   animation: arrow 0.5s infinite ease-in-out alternate;
@@ -197,7 +184,6 @@
 }
 
 .picture {
-  /* min-inline-size: 230px; */
   object-fit: cover;
   object-position: center;
   inline-size: 100%; 
@@ -206,14 +192,9 @@
   border-block-end: 2px solid var(--accent-color);
 }
 
-
 .image-container {
   position: relative;
 }
-
-
-
-
 
 .label {
   position: absolute;
@@ -229,7 +210,6 @@
     0 1px var(--bg-color), 
     1px 0 var(--bg-color), 
     0 -1px var(--bg-color); 
-
     font-weight: 400;
 }
 
@@ -241,14 +221,6 @@
       text-shadow: none;
   }
 } 
-
-
-
-
-
-
-
-
 
 .text_box-button {
   display: flex;
@@ -275,12 +247,7 @@
   gap: 5px;
 }
 
-
-
-
-
 /* СЕРДЦЕ */
-
 .card__like-icon {
   background: transparent;
   border: 2px solid transparent;
@@ -288,7 +255,6 @@
   transition: border-color 0.3s ease;
   padding: 0;
   height: 38px;
-  /* height: 39px */
 }
 
 .card__like-icon:focus {
@@ -303,28 +269,11 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
 /* КНОПКА ЛАЙК */
 .button__content {
   position: relative;
-  /* padding-block: 12px;
-  padding-inline: 36px; */
-  width: 130px;
+  width: 100%;
+  min-width: 130px;
   height: 38px;
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font);
@@ -334,7 +283,6 @@
   line-height: 12px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-
 }
 
 .button__content:focus,
@@ -364,18 +312,12 @@
   transform: scaleX(1);
 }
 
-
 .button__text {
   position: relative;
   z-index: 1;
   color: var(--button-like-text-color);
   mix-blend-mode: difference; 
 }
-
-
-
-
-
 
 .footer {
   margin-block-end: 100px;
@@ -395,7 +337,6 @@
   padding-inline: 18px;
   border: 2px solid var(--accent-color);
   inline-size: clamp(306px, 18.4868rem + 2.723vw, 335px);
-  /* inline-size: clamp(19.125rem, 2.723vw + 18.487rem, 20.938rem); */
   max-inline-size: 335px;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
@@ -418,27 +359,101 @@
   transform: scaleX(1);
 }
 
-
 .diskette-icon {
   inline-size: 21px;
   block-size: 21px;
-  /* color: var(--accent-color); */
-
-
+  align-self: center;
   color: var(--button-like-text-color);
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
 }
 
+.dialog__form .diskette-icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.paragraph__text {
+  color: var(--accent-color);
+  font-family: var(--accent-font, sans-serif);
+  font-size: 14px;
+  line-height: 21px;
+  white-space: break-word;
+  max-width: 234px;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+  padding: 0;
+}
+
+dialog:modal {
+  padding: 0;
+  border: none;
+}
+
+.dialog__text-box {
+  display: flex;
+  gap: 20px;
+}
+
+.dialog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+}
+
+.picture__one {
+  filter: none;
+}
+
+.picture__two {
+  filter: contrast(50%);
+}
+
+.picture__three {
+  filter: grayscale(0.8);
+}
+
+.picture__four {
+  filter: hue-rotate(-90deg);
+}
+
+.picture__five {
+  filter: sepia(80%);
+}
+
+.picture__six {
+  filter: invert(0.7);
+}
+
+.picture__seven {
+  filter: opacity(0.7);
+}
+
+.picture__eight {
+  filter: brightness(200%) saturate(60%) hue-rotate(-90deg);
+}
+
 @media (width <= 375px) {
+  .header {
+    padding-block-start: 120px;
+  }
+
   .diskette-icon {
     inline-size: 28px;
     block-size: 28px;
   }
 
+  .paragraph__text {
+    max-width: 198px;
+  }
+
   .label {
-    /* inset-inline-end: 13px; */
     inset-inline-end: 11px;
   }
 }
