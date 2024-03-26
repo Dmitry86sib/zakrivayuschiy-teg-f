@@ -23,7 +23,7 @@
 }
 
 .card__like-icon .main-body {
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .card__like-icon:hover .main-body {
@@ -37,14 +37,21 @@
 
 .card__like-icon:active .core {
   fill: var(--fill-color-heart);
+  transition-delay: 0s;
 }
 
 .card__like-icon:active .main-body {
   fill: var(--fill-color-heart);
+  transition-delay: 0.05s;
+}
+
+.like-icon .contour {
+  transition: fill 0.1s linear;
+  fill: var(--accent-color);
 }
 
 .like-icon.is-liked .contour {
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
   fill: var(--fill-color-heart);
 }
 
@@ -54,6 +61,7 @@
 }
 
 .like-icon.is-liked .main-body {
+  transition: fill 0.3s 0.05s linear;
   fill: var(--fill-color-heart);
 }
 
@@ -94,30 +102,12 @@
   }
 }
 
-.like-icon:not(.is-liked) .contour {
-  animation: paint-color 0.1s forwards;
-}
-
-@keyframes paint-color {
-  from {
-    fill: var(--fill-color-heart);
-    /* Исходный цвет сердечка */
-  }
-
-  to {
-    fill: var(--accent-color);
-    /* Цвет, на который нужно вернуть */
-  }
-}
-
 @keyframes arrow {
   0% {
-    /* transform: translateX(0); */
     left: -19Px;
   }
 
   100% {
-    /* transform: translateX(-4px); */
     left: -15px;
   }
 }
