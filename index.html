@@ -625,14 +625,16 @@
               </svg>
               <p class="paragraph__text">Вставьте дискету, чтобы продолжить</p>
             </div>
-            <button
-              type="button"
-              onclick="window['dialog'].close()"
-              aria-controls="dialog"
-              class="button__content button__style"
-            >
-              <span class="button__text">OK</span>
-            </button>
+            <form method="dialog">
+              <button
+                type="button"
+                onclick="window['dialog'].close()"
+                aria-controls="dialog"
+                class="button__content button__style"
+              >
+                <span class="button__text">OK</span>
+              </button>
+            </form>
           </div>
         </dialog>
       </div>
